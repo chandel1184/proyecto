@@ -1,0 +1,29 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url('alex.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: aqua;
+}
+
+.container {
+    background-color: rgb(0, 0, 0);
+    padding: 20px;
+    text-align: center;
+    width: 450px;
+    border-radius: 15px;
+}
+
+.container a {
+    color: azure;
+    text-decoration: none;
+}
+
+h1 {
+    font-family: monospace;
+    font-size: 1rem;
+}

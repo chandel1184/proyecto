@@ -1,0 +1,67 @@
+/*fondo de la pagina*/
+
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url('alex.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+/*cuadro negro*/
+
+.container {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    width: 300px;
+    border-radius: 15px;
+    color: aqua;
+}
+
+
+/*este es del h1*/
+
+.container h1 {
+    margin-top: 0;
+    width: max-cntent;
+    font-family: monospace;
+    font-size: 1rem;
+}
+
+
+/*este es de h2*/
+
+.Lit {
+    font-family: monospace;
+    font-size: 1rem;
+    animation: teclear 2.5s steps(50), efecto .5s step-end infinite alternate;
+}
+
+@keyframes teclear {
+    from {
+        clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%);
+    }
+    to {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    }
+}
+
+@keyframes efeto {
+    50% {
+        border-color: transparent;
+    }
+}
+
+.button-container {
+    display: flex;
+    flex-direction: column;
+    /* Cambia la dirección de los elementos a columna */
+    align-items: center;
+}

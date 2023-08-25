@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/editor.css">
+</head>
+
+<body>
+
+    <!--se crea este html por si la persona quiere editar su nombre o contrasena-->
+    <div class="container">
+        <h1>Editar perfil</h1>
+        <form action="/edit/{{user.name}}" method="post">
+
+            <label for="newName">Nuevo nombre de usuario:</label><br>
+            <input type="text" id="newName" name="newName" placeholder="Usuario">
+
+            <br><label for="newPassword">Nueva contrasena:</label><br>
+            <input type="password" id="newPassword" name="newPassword" placeholder="contrasena"><br>
+
+            <button type="submit">Guardar cambios</button>
+
+        </form>
+</body>
+
+</html>

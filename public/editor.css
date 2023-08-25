@@ -1,0 +1,48 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url('alex.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: aqua;
+}
+
+.container {
+    background-color: rgb(0, 0, 0);
+    padding: 40px;
+    text-align: center;
+    width: 450px;
+    border-radius: 15px;
+}
+
+.container h1 {
+    font-family: monospace;
+    font-size: 1rem;
+}
+
+label {
+    margin: 11px;
+    font-family: monospace;
+    font-size: 1rem;
+    display: inline-block;
+    /* funcion de efecto de texto en usuario y contrasena texto */
+    animation: teclear 2.3s steps(40), efecto 0.5s step-end infinite alternate;
+}
+
+@keyframes teclear {
+    from {
+        clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%);
+    }
+    to {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    }
+}
+
+button {
+    position: absolute;
+    top: 400px;
+    left: 570px;
+}
